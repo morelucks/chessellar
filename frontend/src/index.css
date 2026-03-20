@@ -1,1 +1,39 @@
 @import "tailwindcss";
+
+@theme {
+  --color-accent: #aa3bff;
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+}
+
+:root {
+  --accent: #aa3bff;
+  --accent-border: #2e303a;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* react-chessboard overrides */
+[data-board-id="BasicBoard"] {
+  border-radius: 12px;
+  overflow: hidden;
+}
