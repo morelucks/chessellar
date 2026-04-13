@@ -1,5 +1,8 @@
 #![cfg(test)]
 
+//! Functional tests for the Chessellar contract.
+//! These tests verify the game lifecycle and move submission.
+
 use super::*;
 use soroban_sdk::{testutils::Address as _, Address, Env, String};
 
